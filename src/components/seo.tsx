@@ -14,7 +14,7 @@ const defaultMeta = {
    * No need to be filled, will be populated with openGraph function
    * If you wish to use a normal image, just specify the path below
    */
-  image: "localhost:3000/images/large-og.png",
+  image: "localhost:3000/images/logo-text.png",
 };
 
 type SeoProps = {
@@ -89,14 +89,14 @@ const favicons: Array<React.ComponentPropsWithoutRef<"link">> = [
   {
     rel: "icon",
     type: "image/png",
-    sizes: "32x32",
-    href: "/favicon/favicon-32x32.png",
+    sizes: "16x16",
+    href: "/favicon/favicon-16x16.png",
   },
   {
     rel: "icon",
     type: "image/png",
-    sizes: "16x16",
-    href: "/favicon/favicon-16x16.png",
+    sizes: "32x32",
+    href: "/favicon/favicon-32x32.png",
   },
   { rel: "manifest", href: "/favicon/site.webmanifest" },
   {
