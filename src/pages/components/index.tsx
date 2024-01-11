@@ -13,6 +13,7 @@ import {
 import Avatars from "./avatars";
 import Badges from "./badges";
 import Buttons from "./buttons";
+import Icons from "./icons";
 import Skeletons from "./skeletons";
 
 export default function Components() {
@@ -38,6 +39,8 @@ export default function Components() {
       <Badges />
       {/* //NOTE - Buttons */}
       <Buttons />
+      {/* //NOTE - Icons */}
+      <Icons />
       {/* //NOTE - Skeletons */}
       <Skeletons />
     </main>
