@@ -1,4 +1,4 @@
-import { Minus, Plus } from "lucide-react";
+import { ChevronLeft, ChevronRight, Minus, Plus } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -27,6 +27,11 @@ function Buttons() {
             <Button variant="default" size="icon" disabled>
               <Minus />
             </Button>
+            <Button variant="default">
+              <ChevronLeft className="mr-1" />
+              Default
+              <ChevronRight className="ml-1" />
+            </Button>
           </div>
           <div className="flex items-center gap-2">
             <Button variant="outline">Outline</Button>
@@ -41,6 +46,11 @@ function Buttons() {
             </Button>
             <Button variant="outline" size="icon" disabled>
               <Minus />
+            </Button>
+            <Button variant="outline">
+              <ChevronLeft className="mr-1" />
+              Default
+              <ChevronRight className="ml-1" />
             </Button>
           </div>
           <div className="flex items-center gap-2">
@@ -57,6 +67,11 @@ function Buttons() {
             <Button variant="ghost" size="icon" disabled>
               <Minus />
             </Button>
+            <Button variant="ghost">
+              <ChevronLeft className="mr-1" />
+              Default
+              <ChevronRight className="ml-1" />
+            </Button>
           </div>
           <div className="flex items-center gap-2">
             <Button variant="link">Link</Button>
@@ -71,6 +86,11 @@ function Buttons() {
             </Button>
             <Button variant="link" size="icon" disabled>
               <Minus />
+            </Button>
+            <Button variant="link">
+              <ChevronLeft className="mr-1" />
+              Default
+              <ChevronRight className="ml-1" />
             </Button>
           </div>
         </div>
@@ -94,6 +114,11 @@ function Buttons() {
             <Button variant="default" color="secondary" size="icon" disabled>
               <Minus />
             </Button>
+            <Button variant="default" color="secondary">
+              <ChevronLeft className="mr-1" />
+              Default
+              <ChevronRight className="ml-1" />
+            </Button>
           </div>
           <div className="flex items-center gap-2">
             <Button variant="outline" color="secondary">
@@ -110,6 +135,11 @@ function Buttons() {
             </Button>
             <Button variant="outline" color="secondary" size="icon" disabled>
               <Minus />
+            </Button>
+            <Button variant="outline" color="secondary">
+              <ChevronLeft className="mr-1" />
+              Default
+              <ChevronRight className="ml-1" />
             </Button>
           </div>
           <div className="flex items-center gap-2">
@@ -128,6 +158,11 @@ function Buttons() {
             <Button variant="ghost" color="secondary" size="icon" disabled>
               <Minus />
             </Button>
+            <Button variant="ghost" color="secondary">
+              <ChevronLeft className="mr-1" />
+              Default
+              <ChevronRight className="ml-1" />
+            </Button>
           </div>
           <div className="flex items-center gap-2">
             <Button variant="link" color="secondary">
@@ -144,6 +179,11 @@ function Buttons() {
             </Button>
             <Button variant="link" color="secondary" size="icon" disabled>
               <Minus />
+            </Button>
+            <Button variant="link" color="secondary">
+              <ChevronLeft className="mr-1" />
+              Default
+              <ChevronRight className="ml-1" />
             </Button>
           </div>
         </div>
@@ -167,6 +207,11 @@ function Buttons() {
             <Button variant="default" color="success" size="icon" disabled>
               <Minus />
             </Button>
+            <Button variant="default" color="success">
+              <ChevronLeft className="mr-1" />
+              Default
+              <ChevronRight className="ml-1" />
+            </Button>
           </div>
           <div className="flex items-center gap-2">
             <Button variant="outline" color="success">
@@ -183,6 +228,11 @@ function Buttons() {
             </Button>
             <Button variant="outline" color="success" size="icon" disabled>
               <Minus />
+            </Button>
+            <Button variant="outline" color="success">
+              <ChevronLeft className="mr-1" />
+              Default
+              <ChevronRight className="ml-1" />
             </Button>
           </div>
           <div className="flex items-center gap-2">
@@ -201,6 +251,11 @@ function Buttons() {
             <Button variant="ghost" color="success" size="icon" disabled>
               <Minus />
             </Button>
+            <Button variant="ghost" color="success">
+              <ChevronLeft className="mr-1" />
+              Default
+              <ChevronRight className="ml-1" />
+            </Button>
           </div>
           <div className="flex items-center gap-2">
             <Button variant="link" color="success">
@@ -217,6 +272,11 @@ function Buttons() {
             </Button>
             <Button variant="link" color="success" size="icon" disabled>
               <Minus />
+            </Button>
+            <Button variant="link" color="success">
+              <ChevronLeft className="mr-1" />
+              Default
+              <ChevronRight className="ml-1" />
             </Button>
           </div>
         </div>
@@ -240,6 +300,11 @@ function Buttons() {
             <Button variant="default" color="danger" size="icon" disabled>
               <Minus />
             </Button>
+            <Button variant="default" color="danger">
+              <ChevronLeft className="mr-1" />
+              Default
+              <ChevronRight className="ml-1" />
+            </Button>
           </div>
           <div className="flex items-center gap-2">
             <Button variant="outline" color="danger">
@@ -256,6 +321,11 @@ function Buttons() {
             </Button>
             <Button variant="outline" color="danger" size="icon" disabled>
               <Minus />
+            </Button>
+            <Button variant="outline" color="danger">
+              <ChevronLeft className="mr-1" />
+              Default
+              <ChevronRight className="ml-1" />
             </Button>
           </div>
           <div className="flex items-center gap-2">
@@ -274,6 +344,11 @@ function Buttons() {
             <Button variant="ghost" color="danger" size="icon" disabled>
               <Minus />
             </Button>
+            <Button variant="ghost" color="danger">
+              <ChevronLeft className="mr-1" />
+              Default
+              <ChevronRight className="ml-1" />
+            </Button>
           </div>
           <div className="flex items-center gap-2">
             <Button variant="link" color="danger">
@@ -290,6 +365,11 @@ function Buttons() {
             </Button>
             <Button variant="link" color="danger" size="icon" disabled>
               <Minus />
+            </Button>
+            <Button variant="link" color="danger">
+              <ChevronLeft className="mr-1" />
+              Default
+              <ChevronRight className="ml-1" />
             </Button>
           </div>
         </div>
