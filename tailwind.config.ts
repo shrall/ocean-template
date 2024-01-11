@@ -18,6 +18,9 @@ const config = {
       },
     },
     extend: {
+      backgroundImage: {
+        ocean: "url('/images/background.png')",
+      },
       colors: {
         ocean: {
           primary: {
