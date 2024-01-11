@@ -10,6 +10,7 @@ import {
 } from "@/components/ui/card";
 
 import Avatars from "./avatars";
+import Badges from "./badges";
 import Buttons from "./buttons";
 
 export default function Components() {
@@ -30,6 +31,8 @@ export default function Components() {
       </Card>
       {/* //NOTE - Avatars */}
       <Avatars />
+      {/* //NOTE - Badges */}
+      <Badges />
       {/* //NOTE - Buttons */}
       <Buttons />
     </main>
