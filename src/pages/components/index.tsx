@@ -1,6 +1,7 @@
 import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
 
+import Seo from "@/components/seo";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -17,6 +18,7 @@ import Skeletons from "./skeletons";
 export default function Components() {
   return (
     <main className="w-screen min-h-screen flex flex-col px-32 py-12 gap-4">
+      <Seo templateTitle="Components" siteName="Ocean Starter Template" />
       <Link href="/">
         <Button variant="link" className="mr-auto">
           <ArrowLeft className="size-5 mr-2" /> Go Back

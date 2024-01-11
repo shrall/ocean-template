@@ -16,7 +16,7 @@ import {
 export default function Home() {
   return (
     <Layout>
-      <Seo title="Home" />
+      <Seo templateTitle="Home" siteName="Ocean Starter Template" />
       <section className="w-screen min-h-screen flex flex-col items-center justify-center gap-4 px-32 py-12">
         <Card className="w-3/4 min-h-[70vh] bg-ocean bg-cover flex flex-col items-center justify-center">
           <CardHeader className="flex flex-col items-center justify-center">
