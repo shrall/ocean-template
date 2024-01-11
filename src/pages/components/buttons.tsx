@@ -100,13 +100,13 @@ function Buttons() {
           <p className="text-xl">Secondary</p>
           <div className="flex items-center gap-2">
             <Button variant="default" color="secondary">
-              Primary
+              Default
             </Button>
             <Button variant="default" color="secondary" disabled>
-              Primary
+              Default
             </Button>
             <Button variant="default" color="secondary" shape="rounded">
-              Primary
+              Default
             </Button>
             <Button variant="default" color="secondary" size="icon">
               <Plus />
@@ -193,13 +193,13 @@ function Buttons() {
           <p className="text-xl">Success</p>
           <div className="flex items-center gap-2">
             <Button variant="default" color="success">
-              Primary
+              Default
             </Button>
             <Button variant="default" color="success" disabled>
-              Primary
+              Default
             </Button>
             <Button variant="default" color="success" shape="rounded">
-              Primary
+              Default
             </Button>
             <Button variant="default" color="success" size="icon">
               <Plus />
@@ -286,13 +286,13 @@ function Buttons() {
           <p className="text-xl">Danger</p>
           <div className="flex items-center gap-2">
             <Button variant="default" color="danger">
-              Primary
+              Default
             </Button>
             <Button variant="default" color="danger" disabled>
-              Primary
+              Default
             </Button>
             <Button variant="default" color="danger" shape="rounded">
-              Primary
+              Default
             </Button>
             <Button variant="default" color="danger" size="icon">
               <Plus />
