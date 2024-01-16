@@ -1,28 +1,29 @@
-import { ArrowLeft } from "lucide-react";
-import Link from "next/link";
+import { ArrowLeft } from 'lucide-react';
+import Link from 'next/link';
 
-import Seo from "@/components/seo";
-import { Button } from "@/components/ui/button";
+import Seo from '@/components/seo';
+import { Button } from '@/components/ui/button';
 import {
   Card,
   CardDescription,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card";
+} from '@/components/ui/card';
 
-import Avatars from "./avatars";
-import Badges from "./badges";
-import Buttons from "./buttons";
-import Icons from "./icons";
-import Skeletons from "./skeletons";
+import Avatars from './avatars';
+import Badges from './badges';
+import Buttons from './buttons';
+import Icons from './icons';
+import Skeletons from './skeletons';
+import Toast from './toast';
 
 export default function Components() {
   return (
-    <main className="w-screen min-h-screen flex flex-col px-32 py-12 gap-4">
-      <Seo templateTitle="Components" siteName="Ocean Starter Template" />
-      <Link href="/">
-        <Button variant="link" className="mr-auto">
-          <ArrowLeft className="size-5 mr-2" /> Go Back
+    <main className='flex min-h-screen w-screen flex-col gap-4 px-32 py-12'>
+      <Seo templateTitle='Components' siteName='Ocean Starter Template' />
+      <Link href='/'>
+        <Button variant='link' className='mr-auto'>
+          <ArrowLeft className='mr-2 size-5' /> Go Back
         </Button>
       </Link>
       <Card>
@@ -43,6 +44,8 @@ export default function Components() {
       <Icons />
       {/* //NOTE - Skeletons */}
       <Skeletons />
+      {/* //NOTE - Toast */}
+      <Toast />
     </main>
   );
 }
