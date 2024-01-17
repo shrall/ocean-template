@@ -12,6 +12,7 @@ function Toast() {
           Toast/
           <Link
             href='https://ui.shadcn.com/docs/components/sonner'
+            target='_blank'
             className='flex text-ocean-primary-10 hover:underline'
           >
             Sonner

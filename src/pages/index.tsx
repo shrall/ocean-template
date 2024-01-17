@@ -21,7 +21,7 @@ export default function Home() {
   return (
     <Layout>
       <Seo templateTitle='Home' siteName='Ocean Starter Template' />
-      <section className='flex min-h-screen w-screen flex-col items-center justify-center gap-4 px-32 py-12'>
+      <section className='min-w-screen flex min-h-screen flex-col items-center justify-center gap-4 px-32 py-12'>
         <Card className='flex min-h-[70vh] w-3/4 flex-col items-center justify-center bg-ocean bg-cover'>
           <CardHeader className='flex flex-col items-center justify-center'>
             <CardTitle className='text-ocean-light-10'>

@@ -18,11 +18,12 @@ import Buttons from './buttons';
 import Icons from './icons';
 import Skeletons from './skeletons';
 import Toast from './toast';
+import Tours from './tours';
 
 export default function Components() {
   const { text, changeLocale } = useLocale();
   return (
-    <main className='flex min-h-screen w-screen flex-col gap-4 px-32 py-12'>
+    <main className='min-w-screen flex min-h-screen flex-col gap-4 px-32 py-12'>
       <Seo templateTitle='Components' siteName='Ocean Starter Template' />
       <div className='flex items-center justify-between gap-x-2'>
         <Link href='/'>
@@ -30,7 +31,7 @@ export default function Components() {
             <ArrowLeft className='mr-2 size-5' /> {text.go_back}
           </Button>
         </Link>
-        <div className='flex items-center gap-x-2'>
+        <div id='i18n-buttons' className='flex items-center gap-x-2'>
           <Button
             onClick={() => changeLocale('id')}
             variant='default'
@@ -53,7 +54,7 @@ export default function Components() {
       </div>
       <Card>
         <CardHeader>
-          <CardTitle>{text.components}</CardTitle>
+          <CardTitle id='component-title'>{text.components}</CardTitle>
           <CardDescription>{text.components_description}</CardDescription>
         </CardHeader>
       </Card>
@@ -69,6 +70,8 @@ export default function Components() {
       <Skeletons />
       {/* //NOTE - Toast */}
       <Toast />
+      {/* //NOTE - Tours */}
+      <Tours />
     </main>
   );
 }
