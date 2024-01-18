@@ -8,14 +8,14 @@
 </p>
 
 This is a starter template for Ocean.
-It includes a basic setup for TailwindCSS and Typescript.
+It includes a basic setup for TailwindCSS, Typescript and Module Federation using [nextjs-mf](https://github.com/module-federation/universe/tree/main/packages/nextjs-mf).
 
 ## Getting Started
 
 1. Clone this template
 
    ```bash
-   npx create-next-app -e https://github.com/shrall/ocean-template project-name
+   yarn create next-app -e https://github.com/shrall/ocean-template project-name
    ```
 
 2. Install dependencies
