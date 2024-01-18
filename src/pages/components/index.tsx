@@ -15,7 +15,9 @@ import {
 import Avatars from './avatars';
 import Badges from './badges';
 import Buttons from './buttons';
+import Dialogs from './dialogs';
 import Icons from './icons';
+import Inputs from './inputs';
 import Skeletons from './skeletons';
 import Toast from './toast';
 import Tours from './tours';
@@ -64,8 +66,12 @@ export default function Components() {
       <Badges />
       {/* //NOTE - Buttons */}
       <Buttons />
+      {/* //NOTE - Dialogs */}
+      <Dialogs />
       {/* //NOTE - Icons */}
       <Icons />
+      {/* //NOTE - Inputs */}
+      <Inputs />
       {/* //NOTE - Skeletons */}
       <Skeletons />
       {/* //NOTE - Toast */}
