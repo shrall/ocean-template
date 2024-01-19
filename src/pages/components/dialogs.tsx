@@ -33,7 +33,7 @@ function Dialogs() {
                 </DialogDescription>
               </DialogHeader>
               <div className='grid gap-4 py-4'>
-                <div className='grid grid-cols-4 items-center gap-4'>
+                <div className=''>
                   <Label htmlFor='name' className='text-right'>
                     Name
                   </Label>
@@ -43,7 +43,7 @@ function Dialogs() {
                     className='col-span-3'
                   />
                 </div>
-                <div className='grid grid-cols-4 items-center gap-4'>
+                <div className=''>
                   <Label htmlFor='username' className='text-right'>
                     Username
                   </Label>
