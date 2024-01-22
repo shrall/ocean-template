@@ -48,7 +48,8 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: 'text-ocean-light-10',
+        default:
+          'text-ocean-light-10 disabled:opacity-100 disabled:bg-ocean-light-40',
         outline: 'border bg-ocean-light-10 hover:text-ocean-light-10',
         ghost: 'hover:text-ocean-light-10',
         link: 'underline-offset-4 hover:underline',
