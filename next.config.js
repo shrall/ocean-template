@@ -5,22 +5,23 @@ module.exports = {
   i18n: {
     locales: ['id', 'en'],
     defaultLocale: 'id',
+    localeDetection: false,
   },
   webpack(config, options) {
     const { isServer } = options;
     config.plugins.push(
       new NextFederationPlugin({
-        name: 'ocean_root',
+        name: 'ocean_parent',
         remotes: {
           //NOTE - Add the remote projects here
-          ocean_child: `ocean_child@http://localhost:3001/_next/static/${
-            isServer ? 'ssr' : 'chunks'
-          }/remoteEntry.js`,
+          ocean_child: `ocean_child@${
+            process.env.NEXT_PUBLIC_OCEAN_HOME_URL
+          }/_next/static/${isServer ? 'ssr' : 'chunks'}/remoteEntry.js`,
         },
         filename: 'static/chunks/remoteEntry.js',
         exposes: {
           //NOTE - Expose the components here
-          // "./button": "./src/components/ui/button.tsx",
+          // './store/useTokenStore': './src/store/useTokenStore.ts',
         },
         shared: {
           //NOTE - Add the shared dependencies here
