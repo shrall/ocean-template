@@ -1,7 +1,7 @@
 import { useState } from 'react';
+import { IoMdEye } from 'react-icons/io';
 
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import Icon from '@/components/ui/icon';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 
@@ -66,11 +66,10 @@ function Inputs() {
               placeholder='Password'
               type={showPassword ? 'text' : 'password'}
               rightNode={
-                <Icon
+                <IoMdEye
                   onClick={() => setShowPassword(!showPassword)}
-                  icon='eye'
-                  fill='ocean-light-40'
-                ></Icon>
+                  className='size-6 text-ocean-light-40'
+                />
               }
             />
           </div>

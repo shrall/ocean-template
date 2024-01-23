@@ -3,14 +3,12 @@ import * as React from 'react';
 import { tailwindColors } from '@/lib/colors';
 import { cn } from '@/lib/utils';
 
-import Icon, { IconType } from './icon';
-
 type InputStyle = 'default' | 'underline';
 
 export interface InputProps
   extends React.InputHTMLAttributes<HTMLInputElement> {
   error?: boolean;
-  leftIcon?: IconType;
+  leftIcon?: React.ReactNode;
   iconColor?: keyof typeof tailwindColors;
   inputStyle?: InputStyle;
   rightNode?: React.ReactNode;
@@ -23,7 +21,6 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
       type,
       error = false,
       leftIcon,
-      iconColor = 'ocean-dark-20',
       inputStyle = 'default',
       rightNode,
       disabled,
@@ -42,7 +39,7 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
           rightNode && 'relative py-3',
         )}
       >
-        {leftIcon && <Icon icon={leftIcon} fill={iconColor}></Icon>}
+        {leftIcon}
         <input
           type={type}
           className={cn(

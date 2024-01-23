@@ -2,10 +2,7 @@ import { Slot } from '@radix-ui/react-slot';
 import { cva, type VariantProps } from 'class-variance-authority';
 import * as React from 'react';
 
-import { tailwindColors } from '@/lib/colors';
 import { cn } from '@/lib/utils';
-
-import Icon, { IconType } from './icon';
 
 const buttonColors: { [key: string]: { [key: string]: string } } = {
   primary: {
@@ -85,30 +82,14 @@ export interface ButtonProps
     | 'warning'
     | 'danger'
     | undefined;
-  icon?: IconType;
-  iconFill?: keyof typeof tailwindColors;
-  iconHoverFill?: keyof typeof tailwindColors;
 }
 
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   (
-    {
-      className,
-      variant,
-      size,
-      shape,
-      asChild = false,
-      color,
-      icon,
-      iconFill = 'ocean-primary-10',
-      iconHoverFill = 'ocean-light-10',
-      children,
-      ...props
-    },
+    { className, variant, size, shape, asChild = false, color, ...props },
     ref,
   ) => {
     const Comp = asChild ? Slot : 'button';
-    const [isHovered, setIsHovered] = React.useState(false);
 
     return (
       <Comp
@@ -118,15 +99,8 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
           className,
         )}
         ref={ref}
-        onMouseEnter={() => setIsHovered(true)}
-        onMouseLeave={() => setIsHovered(false)}
         {...props}
-      >
-        {icon && (
-          <Icon icon={icon} fill={isHovered ? iconHoverFill : iconFill} />
-        )}
-        {children}
-      </Comp>
+      />
     );
   },
 );
