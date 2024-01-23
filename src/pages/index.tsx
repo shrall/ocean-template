@@ -50,7 +50,7 @@ export default function Home() {
                 variant='default'
                 color='secondary'
                 size='icon'
-                className='p-5 text-xl'
+                className='text-xl'
               >
                 🇮🇩
               </Button>
@@ -59,7 +59,7 @@ export default function Home() {
                 variant='default'
                 color='secondary'
                 size='icon'
-                className='p-5 text-xl'
+                className='text-xl'
               >
                 🇺🇸
               </Button>

@@ -2,12 +2,15 @@ import { Slot } from '@radix-ui/react-slot';
 import { cva, type VariantProps } from 'class-variance-authority';
 import * as React from 'react';
 
+import { tailwindColors } from '@/lib/colors';
 import { cn } from '@/lib/utils';
+
+import Icon, { IconType } from './icon';
 
 const buttonColors: { [key: string]: { [key: string]: string } } = {
   primary: {
     default:
-      'bg-ocean-primary-10 hover:bg-ocean-primary-30 disabled:bg-ocean-light-40 disabled:opacity-100',
+      'bg-ocean-primary-10 hover:bg-ocean-primary-30 disabled:opacity-100 disabled:bg-ocean-light-40',
     outline:
       'border-ocean-primary-10 text-ocean-primary-10 hover:text-ocean-light-10 hover:bg-ocean-primary-10',
     ghost: 'text-ocean-primary-10 hover:bg-ocean-primary-10',
@@ -56,7 +59,7 @@ const buttonVariants = cva(
       },
       size: {
         default: 'h-10 px-4 py-2',
-        icon: 'h-6 w-6 p-1',
+        icon: 'size-6 p-1 box-content',
       },
       shape: {
         pill: 'rounded-full',
@@ -82,14 +85,31 @@ export interface ButtonProps
     | 'warning'
     | 'danger'
     | undefined;
+  icon?: IconType;
+  iconFill?: keyof typeof tailwindColors;
+  iconHoverFill?: keyof typeof tailwindColors;
 }
 
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   (
-    { className, variant, size, shape, color, asChild = false, ...props },
+    {
+      className,
+      variant,
+      size,
+      shape,
+      asChild = false,
+      color,
+      icon,
+      iconFill = 'ocean-primary-10',
+      iconHoverFill = 'ocean-light-10',
+      children,
+      ...props
+    },
     ref,
   ) => {
     const Comp = asChild ? Slot : 'button';
+    const [isHovered, setIsHovered] = React.useState(false);
+
     return (
       <Comp
         className={cn(
@@ -98,8 +118,15 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
           className,
         )}
         ref={ref}
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
         {...props}
-      />
+      >
+        {icon && (
+          <Icon icon={icon} fill={isHovered ? iconHoverFill : iconFill} />
+        )}
+        {children}
+      </Comp>
     );
   },
 );
