@@ -3,6 +3,7 @@ import { FC } from 'react';
 import { tailwindColors } from '@/lib/colors';
 
 const sizes: { [key: string]: number } = {
+  sm: 16,
   md: 24,
   lg: 32,
   xl: 48,
