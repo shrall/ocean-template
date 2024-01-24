@@ -3,9 +3,11 @@ const idLocale = {
   components_description: 'Komponen yang digunakan di dalam Ocean.',
   go_back: 'Kembali',
   see_component: 'Lihat Komponen',
-  tour_skip: 'Skip',
-  tour_close: 'Tutup',
-  tour_next: 'Lanjut',
+  tour: {
+    skip: 'Skip',
+    close: 'Tutup',
+    next: 'Lanjut',
+  },
   tours: [
     {
       title: 'Selamat datang!',

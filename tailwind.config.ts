@@ -18,6 +18,13 @@ const config = {
       },
     },
     extend: {
+      screens: {
+        sm: '576px',
+        md: '748px',
+        lg: '848px',
+        xl: '1048px',
+        '2xl': '1440px',
+      },
       backgroundImage: {
         ocean: "url('/images/background.png')",
       },

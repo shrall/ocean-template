@@ -3,9 +3,11 @@ const enLocale = {
   components_description: 'A list of components that are used in Ocean.',
   go_back: 'Go Back',
   see_component: 'See Components',
-  tour_skip: 'Skip',
-  tour_close: 'Close',
-  tour_next: 'Next',
+  tour: {
+    skip: 'Skip',
+    close: 'Close',
+    next: 'Next',
+  },
   tours: [
     {
       title: 'Welcome!',

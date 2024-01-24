@@ -124,7 +124,7 @@ function Tours() {
                 }
                 variant='outline'
               >
-                {text.tour_skip}
+                {text.tour.skip}
               </Button>
             )}
             <Button
@@ -137,7 +137,7 @@ function Tours() {
               }}
               variant='default'
             >
-              {!isLastStep ? text.tour_next : text.tour_close}
+              {!isLastStep ? text.tour.next : text.tour.close}
             </Button>
           </div>
         </CardFooter>
