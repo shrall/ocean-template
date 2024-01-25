@@ -3,18 +3,18 @@ import { useRouter } from 'next/router';
 
 // !STARTERCONF Change these default meta
 const defaultMeta = {
-  title: 'Next.js + Tailwind CSS + TypeScript Starter',
-  siteName: 'Next.js + Tailwind CSS + TypeScript Starter',
-  description: 'A starter for Next.js, Tailwind CSS, and TypeScript',
+  title: 'Ocean by BCA',
+  siteName: 'Ocean by BCA',
+  description: 'Ocean by BCA',
   /** Without additional '/' on the end, e.g. https://google.com */
-  url: 'localhost:3000',
+  url: `${process.env.NEXT_PUBLIC_OCEAN_MAIN_URL}:3000`,
   type: 'website',
   robots: 'follow, index',
   /**
    * No need to be filled, will be populated with openGraph function
    * If you wish to use a normal image, just specify the path below
    */
-  image: 'localhost:3000/images/logo-text.png',
+  image: `${process.env.NEXT_PUBLIC_OCEAN_MAIN_URL}/images/logo-text.png`,
 };
 
 type SeoProps = {

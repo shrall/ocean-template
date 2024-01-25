@@ -11,10 +11,10 @@ module.exports = {
     const { isServer } = options;
     config.plugins.push(
       new NextFederationPlugin({
-        name: 'ocean_parent',
+        name: 'ocean_main',
         remotes: {
           //NOTE - Add the remote projects here
-          ocean_child: `ocean_child@${
+          ocean_home: `ocean_home@${
             process.env.NEXT_PUBLIC_OCEAN_HOME_URL
           }/_next/static/${isServer ? 'ssr' : 'chunks'}/remoteEntry.js`,
         },
