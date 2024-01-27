@@ -1,6 +1,5 @@
 import * as React from 'react';
 
-import { tailwindColors } from '@/lib/colors';
 import { cn } from '@/lib/utils';
 
 type InputStyle = 'default' | 'underline';
@@ -9,7 +8,6 @@ export interface InputProps
   extends React.InputHTMLAttributes<HTMLInputElement> {
   error?: boolean;
   leftIcon?: React.ReactNode;
-  iconColor?: keyof typeof tailwindColors;
   inputStyle?: InputStyle;
   rightNode?: React.ReactNode;
 }
