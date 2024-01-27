@@ -39,7 +39,7 @@ export default function Components() {
             variant='default'
             color='secondary'
             size='icon'
-            className='p-6 text-xl'
+            className='p-2 text-xl'
           >
             🇮🇩
           </Button>
@@ -48,7 +48,7 @@ export default function Components() {
             variant='default'
             color='secondary'
             size='icon'
-            className='p-6 text-xl'
+            className='p-2 text-xl'
           >
             🇺🇸
           </Button>

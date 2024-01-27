@@ -7,8 +7,8 @@ type InputStyle = 'default' | 'underline';
 export interface InputProps
   extends React.InputHTMLAttributes<HTMLInputElement> {
   error?: boolean;
-  leftIcon?: React.ReactNode;
   inputStyle?: InputStyle;
+  leftNode?: React.ReactNode;
   rightNode?: React.ReactNode;
 }
 
@@ -18,7 +18,7 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
       className,
       type,
       error = false,
-      leftIcon,
+      leftNode,
       inputStyle = 'default',
       rightNode,
       disabled,
@@ -37,7 +37,7 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
           rightNode && 'relative py-3',
         )}
       >
-        {leftIcon}
+        {leftNode}
         <input
           type={type}
           className={cn(
@@ -48,11 +48,7 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
           disabled={disabled}
           {...props}
         />
-        {rightNode && (
-          <div className='absolute inset-y-0 right-0 flex items-center'>
-            {rightNode}
-          </div>
-        )}
+        {rightNode}
       </div>
     );
   },

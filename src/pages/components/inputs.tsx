@@ -51,7 +51,18 @@ function Inputs() {
               With Icon
             </Label>
             <Input
-              leftIcon='search'
+              leftNode={
+                <IoMdEye
+                  onClick={() => setShowPassword(!showPassword)}
+                  className='size-6 text-ocean-light-40'
+                />
+              }
+              rightNode={
+                <IoMdEye
+                  onClick={() => setShowPassword(!showPassword)}
+                  className='size-6 text-ocean-light-40'
+                />
+              }
               id='with-icon'
               placeholder='Search'
               className='col-span-3'
@@ -65,6 +76,12 @@ function Inputs() {
               inputStyle='underline'
               placeholder='Password'
               type={showPassword ? 'text' : 'password'}
+              leftNode={
+                <IoMdEye
+                  onClick={() => setShowPassword(!showPassword)}
+                  className='size-6 text-ocean-light-40'
+                />
+              }
               rightNode={
                 <IoMdEye
                   onClick={() => setShowPassword(!showPassword)}
