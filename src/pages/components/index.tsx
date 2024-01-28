@@ -20,6 +20,7 @@ import Icons from './icons';
 import Inputs from './inputs';
 import Skeletons from './skeletons';
 import Toast from './toast';
+import Tooltips from './tooltips';
 import Tours from './tours';
 
 export default function Components() {
@@ -76,6 +77,8 @@ export default function Components() {
       <Skeletons />
       {/* //NOTE - Toast */}
       <Toast />
+      {/* //NOTE - Tooltips */}
+      <Tooltips />
       {/* //NOTE - Tours */}
       <Tours />
     </main>
