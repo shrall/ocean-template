@@ -29,7 +29,7 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
     return (
       <div
         className={cn(
-          'flex w-full items-center gap-x-2 border-ocean-light-40 bg-white text-sm  placeholder:text-ocean-light-40 ',
+          'flex w-full items-center gap-x-2 border-ocean-light-40 bg-white text-sm placeholder:text-ocean-light-40 focus-within:border-ocean-secondary-30',
           disabled && 'bg-ocean-light-30',
           inputStyle === 'default' && 'rounded-xl border p-3',
           inputStyle === 'underline' && 'border-0 border-b-2 py-1',
